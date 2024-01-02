@@ -9,14 +9,15 @@ import 'aos/dist/aos.css'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+import Header from '../pages/includes/header'
+// const Header = dynamic(() => import('../pages/includes/header'),{
+//   ssr: true,
+// })
+import Footer from '../components/Footer'
 
-const Header = dynamic(() => import('../pages/includes/header'),{
-  ssr: true,
-})
-
-const Footer = dynamic(() => import('../components/Footer'),{
-  ssr: true,
-})
+// const Footer = dynamic(() => import('../components/Footer'),{
+//   ssr: true,
+// })
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
